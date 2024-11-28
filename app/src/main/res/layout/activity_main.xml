@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Overlayed snowflakes -->
+    <ImageView
+        android:id="@+id/snowflake1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/snow_flake"
+        android:visibility="gone"
+         />
+
+    <ImageView
+        android:id="@+id/snowflake2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/snow_flake"
+        android:visibility="gone"
+         />
+
+    <ImageView
+        android:id="@+id/snowflake3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/snow_flake"
+        android:visibility="gone" />
+
+    <!-- Main layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/defaultImageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Default Image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/galleryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/detectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detect"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/replaceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/christmasButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="4dp"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:text="Christmas Edition"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/christmasPlusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="4dp"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:text="Christmas++"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
